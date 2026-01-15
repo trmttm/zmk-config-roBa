@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -127,12 +126,12 @@
             >;
         };
 
-        layer_6 {
+        layer_5 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&trans        &kp RC(LEFT_WIN)    &trans     &kp HOME          &trans                                           &kp DELETE             &kp PAGE_UP    &kp UP_ARROW  &kp EQUAL  &kp RS(MINUS)
+&trans        &kp RC(LEFT_SHIFT)  &trans     &kp LA(LSHFT)     &kp LEFT_SHIFT     &trans           &trans       &kp RC(RIGHT_BRACKET)  &kp LEFT       &kp DOWN      &kp RIGHT  &kp LS(APOSTROPHE)
+&trans        &trans              &trans     &kp END           &trans             &trans           &bootloader  &kp F5                 &kp PAGE_DOWN  &kp KP_PLUS   &kp MINUS  &kp SLASH
+&kp RS(HOME)  &none               &kp SPACE  &kp LC(LG(LEFT))  &kp RG(RC(RIGHT))  &kp RG(TAB)      &trans       &trans                                                         &kp RS(END)
             >;
         };
 
