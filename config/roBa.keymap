@@ -82,7 +82,7 @@
             bindings = <
 &kp Q               &mt LEFT_WIN W      &kp E                     &kp R                   &kp T                                                                      &kp Y             &kp U           &kp I                        &kp O                     &kp P
 &mt LEFT_CONTROL A  &mt LEFT_ALT S      &lt 4 D                   &mt LC(LEFT_ALT) F      &mt LC(LEFT_SHIFT) G  &kp LS(LG(S))                      &kp MINUS         &mt RC(RSHIFT) H  &mt RC(RALT) J  &kp K                        &mt RALT L                &mt RIGHT_CONTROL BACKSPACE
-&mt LEFT_SHIFT Z    &mt LS(LEFT_ALT) X  &mt LC(RA(LEFT_SHIFT)) C  &kp V                   &kp B                 &kp COLON                          &kp SEMICOLON     &kp N             &lt 6 M         &mt RC(RS(RIGHT_ALT)) COMMA  &mt RS(RIGHT_ALT) PERIOD  &mt LEFT_SHIFT SLASH
+&mt LEFT_SHIFT Z    &mt LS(LEFT_ALT) X  &mt LC(RA(LEFT_SHIFT)) C  &kp V                   &kp B                 &kp COLON                          &kp SEMICOLON     &kp N             &lt 4 M         &mt RC(RS(RIGHT_ALT)) COMMA  &mt RS(RIGHT_ALT) PERIOD  &mt LEFT_SHIFT SLASH
 &kp ESCAPE          &mkp MB1            &kp TAB                   &lt_to_layer_0 5 SPACE  &lt 1 LEFT_ALT        &lt_to_layer_0 2 INT_MUHENKAN      &lt 2 INT_HENKAN  &lt 1 ENTER                                                                              &kp RA(TAB)
             >;
 
@@ -120,10 +120,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&none  &none          &none          &none          &none                      &trans  &trans  &trans  &trans  &trans
+&none  &kp RG(RS(S))  &none          &none          &none  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none          &kp RS(RC(C))  &kp RS(RC(V))  &none  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none          &none          &none          &none  &none       &trans  &trans                          &trans
             >;
         };
 
