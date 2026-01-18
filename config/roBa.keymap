@@ -77,8 +77,14 @@
             label = "LAYER_TAP_TO_0";
             bindings = <&mo>, <&to_layer_0>;
 
+             // Strong tap bias for Space
+            flavor = "tap-preferred";
+
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
+
+            // Prevent hold during continuous typing
+            require-prior-idle-ms = <120>;
         };
     };
 
