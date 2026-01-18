@@ -4,8 +4,9 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
-    flavor = "balanced";
-    quick-tap-ms = <0>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <180>;
+    require-prior-idle-ms = <70>;
 };
 
 &trackball {
