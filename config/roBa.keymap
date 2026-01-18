@@ -91,10 +91,10 @@
 
         NUM {
             bindings = <
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                          &kp CARET     &kp AMPERSAND  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp N5      &none          &none    &kp NUMBER_6  &kp N7         &kp N8     &kp N9                &kp N0
-&kp F1            &kp F2            &kp F3            &kp F4            &kp F5      &none          &none    &kp F6        &kp F7         &kp F8     &kp PERIOD            &kp F10
-&kp LEFT          &kp DOWN          &kp UP_ARROW      &trans            &none       &kp RIGHT      &kp F11  &kp F12                                                       &kp BACKSPACE
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                          &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(MINUS)
+&kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp N5      &none          &none    &kp NUMBER_6      &kp N7      &kp N8      &kp N9      &kp N0
+&kp F1            &kp F2            &kp F3            &kp F4            &kp F5      &none          &none    &kp F6            &kp F7      &kp F8      &kp PERIOD  &kp F10
+&kp LEFT          &kp DOWN          &kp UP_ARROW      &trans            &none       &kp RIGHT      &kp F11  &kp F12                                               &kp BACKSPACE
             >;
         };
 
