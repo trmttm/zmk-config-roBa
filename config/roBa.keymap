@@ -12,7 +12,7 @@
     automouse-layer = <4>;
     scroll-layers = <5>;
 
-    scroll-divisor-y = <(-1)>;
+    scroll-invert-y;
 
     // arrows {
     //     layers = <3>;
