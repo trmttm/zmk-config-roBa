@@ -63,11 +63,11 @@
             label = "TO_LAYER_0";
         };
 
-        pc_password: pc_password {
+        key_sequence: key_sequense {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(I) &kp T &kp P &kp C &kp N1 &kp N8 &kp N5 &kp N8>;
-            label = "PC_PASSWORD";
+            label = "KEY_SEQUENSE";
         };
     };
 
@@ -109,7 +109,7 @@
             bindings = <
 &none             &kp LEFT_BRACKET  &kp AT            &kp LS(RIGHT_BRACKET)  &none                         &none             &kp LS(BACKSLASH)  &kp K_CONTEXT_MENU  &kp EQUAL   &kp BACKSLASH
 &kp RA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)       &kp LA(N5)  &none      &none  &kp LA(NUMBER_6)  &kp RA(N7)         &kp RA(N8)          &kp RA(N9)  &kp LS(LEFT_BRACKET)
-&none             &none             &none             &kp RIGHT_BRACKET      &none       &none      &none  &none             &kp BACKSLASH      &kp SEMI            &kp APOS    &kp LS(MINUS)
+&none             &none             &none             &kp RIGHT_BRACKET      &none       &none      &none  &none             &kp BACKSLASH      &kp SEMI            &kp APOS    &kp LS(INT_RO)
 &none             &none             &none             &none                  &none       &none      &none  &none                                                                &none
             >;
         };
@@ -145,10 +145,10 @@
 
         layer_6 {
             bindings = <
-&trans        &trans         &trans         &trans         &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans        &kp LS(LG(S))  &trans         &trans         &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans        &none          &kp LS(RC(C))  &kp RS(RC(V))  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&pc_password  &trans         &trans         &trans         &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&trans         &trans         &trans         &trans         &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans         &kp LS(LG(S))  &trans         &trans         &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
+&trans         &none          &kp LS(RC(C))  &kp RS(RC(V))  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&key_sequence  &trans         &trans         &trans         &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
     };
