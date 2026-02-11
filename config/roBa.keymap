@@ -43,6 +43,13 @@
             bindings = <&kp LS(I) &kp T &kp P &kp C &kp N1 &kp N8 &kp N5 &kp N8>;
             label = "KEY_SEQUENSE";
         };
+
+        itc_id: itc_id {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp N5 &kp N2 &kp N5 &kp N0 &kp N0 &kp N0>;
+            label = "ITC_ID";
+        };
     };
 
     behaviors {
@@ -128,7 +135,7 @@
             bindings = <
 &trans         &trans         &trans         &trans         &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans         &kp LS(LG(S))  &trans         &trans         &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans         &none          &kp LS(RC(C))  &kp RS(RC(V))  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&itc_id        &none          &kp LS(RC(C))  &kp RS(RC(V))  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &key_sequence  &trans         &trans         &trans         &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
