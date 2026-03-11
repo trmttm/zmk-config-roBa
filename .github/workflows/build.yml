@@ -26,32 +26,4 @@ jobs:
         with:
           board: ${{ matrix.board }}
           shield: ${{ matrix.shield }}
-          config: configname: Build ZMK firmware
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-  workflow_dispatch:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        include:
-          - board: nice_nano_v2
-            shield: roba_left
-          - board: nice_nano_v2
-            shield: roba_right
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Build firmware
-        uses: zmkfirmware/zmk/.github/actions/build@v0.3
-        with:
-          board: ${{ matrix.board }}
-          shield: ${{ matrix.shield }}
           config: config
