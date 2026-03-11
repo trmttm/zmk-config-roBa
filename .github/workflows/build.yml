@@ -8,22 +8,6 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        include:
-          - board: nice_nano_v2
-            shield: roba_left
-          - board: nice_nano_v2
-            shield: roba_right
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Build firmware
-        uses: zmkfirmware/zmk/.github/actions/build@v0.3
-        with:
-          board: ${{ matrix.board }}
-          shield: ${{ matrix.shield }}
-          config: config
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+    with:
+      config_path: config
